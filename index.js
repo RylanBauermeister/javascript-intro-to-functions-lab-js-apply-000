@@ -15,12 +15,12 @@ function logWhisper(string) {
 }
 
 function sayHiToGrandma(string) {
+  //Grandma cannot hear you if you whisper or shout.  If you say you love her she cares, but otherwise she just sits there.
   if(string === "I love you, Grandma."){
     return "I love you, too."
-  }
-  else if(string === string.toLowerCase()){
+  } else if(string === whisper(string)){
     return "I can't hear you!"
-  } else if(string === string.toUpperCase()){
+  } else if(string === shout(string)){
     return "YES INDEED!"
   } else {
     return "Grandma doesn't seem to notice you."
